@@ -12,12 +12,12 @@ cap = cv2.VideoCapture(0)
 if (cap.isOpened() == False): 
   print("Unable to read camera feed")
 
-OUTPUT_FILE = 'videos/video1-'+ timestr + '-.mp4'
+OUTPUT_FILE = 'video-'+ timestr + '-.mp4'
 
 frame_width = 640
 frame_height = 480
  
-out = cv2.VideoWriter(OUTPUT_FILE,cv2.VideoWriter_fourcc(*'XVID'), 20.0, (frame_width,frame_height))
+out = cv2.VideoWriter(OUTPUT_FILE,cv2.VideoWriter_fourcc(*'avc1'), 20.0, (frame_width,frame_height))
 
 start_time = time.time()
 def recording():
