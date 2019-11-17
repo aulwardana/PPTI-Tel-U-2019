@@ -18,7 +18,7 @@ files = [f for f in os.listdir('.') if os.path.isfile(f)]
 try:
     for f in files:
         fname, ext = os.path.splitext(f)
-        if (ext == '.avi'):
+        if (ext == '.mp4'):
             print('Uploading ' + f)
             ftp.storbinary('STOR ' + f, open(f, 'rb'))
             os.remove(f);
