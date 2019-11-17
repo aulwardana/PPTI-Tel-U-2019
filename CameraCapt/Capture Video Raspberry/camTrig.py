@@ -6,7 +6,6 @@ import sys
 
 timestr = time.strftime("%Y-%m-%d %H:%M:%S")
 
-
 cap = cv2.VideoCapture(0)
  
 if (cap.isOpened() == False): 
